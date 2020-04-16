@@ -1,0 +1,84 @@
+<mat-toolbar color="primary" class="navbar ">
+
+  <div class="home"> <a routerLink=""> MyApp </a></div>
+
+ </mat-toolbar>
+
+
+
+
+<div class="conteneur">
+
+
+  <div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="30%"></div>
+  <div class="item item-2" fxFlex="40%" >
+
+
+    <mat-card class="example-card">
+      <mat-card-header>
+
+        <mat-card-title align="center">
+               <span class="titre">Sign In</span>
+        </mat-card-title>
+
+      </mat-card-header>
+      <mat-card-content>
+
+        <form [formGroup]="form" (ngSubmit)="submitForm()">        
+
+            <mat-form-field appearance="outline">
+              <mat-label>Adress Email</mat-label>
+              <input type="email" name="email" id="email" formControlName="email" matInput placeholder="mkemmagne@gmail.com">
+              <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+              <mat-error *ngIf="form.get('email').hasError('required')">
+                Oops, please provide a email!
+             </mat-error> 
+           
+
+            </mat-form-field>
+
+
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" name="password" id="password" formControlName="password" placeholder="Enter your password" [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+
+                <mat-error *ngIf="form.get('password').hasError('required')">
+                  Oops, please provide a password!
+               </mat-error>  
+              </mat-form-field>
+
+
+              <mat-checkbox>Rester connecté</mat-checkbox>
+
+
+              <div class="example-button-row">
+                                            <!--routerLink="/marches"     routerLink="/marches"  -->
+
+                <button mat-raised-button color="primary" routerLink="/marches"  type="submit">Login</button>  
+
+                 <button mat-raised-button color="primary"  routerLink="/administrateur/adcompo/admin"  type="submit">Login</button>
+              </div>
+
+          </form>
+      </mat-card-content>
+
+    </mat-card>
+
+
+  </div>
+  <div class="item item-3" fxFlex="30%"></div>
+</div>
+
+
+
+
+</div>

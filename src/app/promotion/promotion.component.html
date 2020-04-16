@@ -1,0 +1,64 @@
+<app-nav></app-nav>
+
+
+<div class="conteneur">
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="10%"></div>
+  <div class="item item-2" fxFlex="80%" >
+
+        <mat-card class="titre" align="center">Creer Des Promotions</mat-card>
+
+       
+      <mat-vertical-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Promotion Périodique</ng-template>
+
+            <app-periodique></app-periodique>
+            <!--
+            <mat-form-field>
+              <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+            </mat-form-field> -->
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Protion Quanditative</ng-template>
+           <!-- <mat-form-field>
+              <input matInput placeholder="Address" formControlName="secondCtrl" required>
+            </mat-form-field>  -->
+
+               <app-quanditaitive></app-quanditaitive>
+             
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Promotion Periodique et Quanditative</ng-template>
+         
+               <app-qualitative></app-qualitative>   
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+      <span class="bouton">
+              <a mat-raised-button color="primary" routerLink="/promotions">Liste Des Promotions</a>
+      </span>
+  </div>
+  <div class="item item-3" fxFlex="10"></div>
+</div>
+</div>

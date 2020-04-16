@@ -1,0 +1,22 @@
+mat-form-field{
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+mat-card{
+  margin-top: 5%;
+}
+
+button{
+  width: 30%;
+  position: relative;
+  top: 36px;
+}
+
+.lien button{
+ width: 30%;
+ margin-left: 60%;
+ position: relative;
+ top: -1%;
+}

@@ -1,0 +1,56 @@
+.icon{
+    margin-top: 3%;
+}
+
+.material-icons{
+    text-align: center;
+    font-size: 704%;
+     color: #3f51b5;
+    
+     margin-top: 3%;
+     margin-left: 26%;
+}
+
+.mat-display-1{
+    text-align: center;
+    margin-top : -1%;
+    margin-bottom: -1%;
+    color: #3f51b5;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.text{
+    text-align: center;
+}
+
+.content{
+
+    margin-top: 7%;
+}
+
+.image{
+    border-radius: 50% 50% 50% 50%  ;
+    
+}
+
+img{
+    border-radius: 50% 50% 50% 50%  ;
+    
+}
+/*
+mat-card{
+  
+    
+}
+*/
+.boutton a{
+    width: 103%;
+}
+
+.boutton{
+    margin-top: 5%;
+}
+
+.boutton a:hover{
+    background-color: #3f51b5;
+}

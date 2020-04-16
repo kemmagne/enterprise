@@ -1,0 +1,75 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title text-center><span class="titre">Creer Marcher</span></mat-card-title>
+
+    </mat-card-header>
+
+    <mat-card-content>
+
+<div class="containers"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+
+
+
+
+  <div class="item item-2" fxFlex="100%">
+
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Nom du marché</mat-label>
+          <input type="text" name="name" id="name" matInput placeholder="cimencam">
+
+        </mat-form-field>
+      </p>
+
+      <p>
+          <mat-form-field appearance="outline">
+            <mat-label>ville</mat-label>
+            <input type="text" name="ville" id="ville" matInput placeholder="Douala">
+
+          </mat-form-field>
+        </p>
+
+
+      <mat-form-field appearance="outline">
+          <mat-label>Description du marché</mat-label>
+          <textarea type="text" name="description" id="description" matInput placeholder="Description"></textarea>
+        </mat-form-field>
+
+      </div>
+
+    </div>
+
+
+
+
+
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="10%"></div>
+  <div class="item item-5" fxFlex="80%">
+
+
+    <div class="example-button-row">
+
+      <a mat-raised-button routerLink="/marches"color="primary">Enregistrer</a>
+
+    </div>
+  </div>
+  <div class="item item-3" fxFlex="10%"></div>
+</div>
+
+
+
+</mat-card-content>
+</mat-card>

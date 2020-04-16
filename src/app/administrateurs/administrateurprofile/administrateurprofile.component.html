@@ -1,0 +1,70 @@
+<mat-card>
+<div class="container"
+fxLayout
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+<div class="item item-1" fxFlex="5%"></div>
+<div class="item item-2" fxFlex="45%">
+
+  <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Nom de l'administrateur</mat-label>
+        <input type="text" name="name" id="name" matInput placeholder="M kemmagnr">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Matricule </mat-label>
+        <input type="text" name="matricule" id="matricule" matInput placeholder="37A495">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Contact </mat-label>
+        <input type="text" name="contact" id="contact" matInput placeholder="+237694412734">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        <mat-hint>Hint</mat-hint>
+      </mat-form-field>
+  </p>
+</div>
+<div class="item item-2" fxFlex="45%">
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Email </mat-label>
+      <input type="email" name="email" id="email" matInput placeholder="mkemmagne@gmail§.com">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+</p>
+
+
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Password</mat-label>
+          <input type="password" name="password" id="password" matInput placeholder="">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+          <mat-hint>Hint</mat-hint>
+        </mat-form-field>
+    </p>
+
+    <div class="example-button-row">
+        <button mat-raised-button>Logo</button>
+
+        <div class="lien">
+          <button mat-raised-button color="primary" matStepperNext routerLink=".">Next</button>
+        </div>
+
+      </div>
+
+</div>
+<div class="item item-3" fxFlex="5%"></div>
+</div>
+
+</mat-card>

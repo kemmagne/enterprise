@@ -1,0 +1,36 @@
+mat-card-title{
+    margin-top: 11%;
+    margin-right: 28px;
+
+}
+
+.titre{
+    margin-left: 80px;
+    color: #3f51b5;
+    justify-content: centre ;
+     font-size: 130%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.containers{
+    margin-top: 4%;
+}
+
+textarea{
+    min-width: 300px;
+    resize: none;
+}
+
+.example-button-row a{
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 120%;
+
+}
+
+mat-form-field{
+    min-width: 110%;
+    margin-right:10px;
+}
+
+

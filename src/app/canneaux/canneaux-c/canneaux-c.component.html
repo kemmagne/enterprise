@@ -1,0 +1,74 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title><span class="titre">Creer Canneaux</span></mat-card-title>
+
+    </mat-card-header>
+
+    <mat-card-content>
+
+<div class="containers"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+
+
+  <div class="item item-2" fxFlex="5%">
+  </div>
+
+  <div class="item item-2" fxFlex="90%">
+
+
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Nom du canneaux</mat-label>
+        <input type="text" name="name" id="name" matInput placeholder="cimencam">
+
+      </mat-form-field>
+    </p>
+
+      <span class="fill">
+        <mat-form-field appearance="outline">
+            <mat-label>Description du canneaux</mat-label>
+            <textarea type="text" name="descritption" id="description" matInput placeholder="Description"></textarea>
+          </mat-form-field>
+      </span>
+
+
+
+  </div>
+
+  <div class="item item-2" fxFlex="5%"></div>
+
+</div>
+
+
+
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="10%"></div>
+  <div class="item item-5" fxFlex="80%">
+
+
+    <div class="example-button-row">
+
+      <a mat-raised-button routerLink="/canneaux"color="primary">Enregistrer</a>
+
+    </div>
+  </div>
+  <div class="item item-3" fxFlex="10%"></div>
+</div>
+
+
+
+</mat-card-content>
+</mat-card>
+

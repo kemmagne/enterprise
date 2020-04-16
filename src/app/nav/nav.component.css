@@ -1,0 +1,36 @@
+mat-toolbar{
+    top: 0px;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar {
+  justify-content: space-between;
+}
+
+span {
+  padding-right: 1rem;
+  font-size: 75%;
+}
+
+span a:hover {
+  color: rgb(209, 209, 241);
+}
+
+.utlisateur{
+
+   position: relative;
+   left: 10%;
+   top: 14%;
+   font-size: 90%;
+}
+
+.utlisateur a:hover {
+  color: rgb(187, 187, 235);
+
+}
+
+.entete{
+  color: #ffffff;
+  text-decoration:  none;
+}

@@ -1,0 +1,61 @@
+<app-nav></app-nav>
+<!--
+<div class="conteneur">
+
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="10%"></div>
+  <div class="item item-2" fxFlex="80%" >
+
+        <mat-card class="titre" align="center">Liste Des Promotions</mat-card>
+
+       
+      <mat-vertical-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>Promotion Périodique</ng-template>
+            
+            
+               <app-periodiques></app-periodiques>
+            
+            <div>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>Protion Quanditative</ng-template>  
+           
+
+                 <app-quanditative></app-quanditative>
+
+           
+             
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext>Next</button>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step>
+          <ng-template matStepLabel>Promotion Periodique et Quanditative</ng-template>
+         
+                <app-qualitatives></app-qualitatives>
+           
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            
+          </div>
+        </mat-step>
+      </mat-vertical-stepper>
+    
+  </div>
+  <div class="item item-3" fxFlex="10"></div>
+</div>
+</div>
+-->

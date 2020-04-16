@@ -1,0 +1,64 @@
+
+<div class="conteneur">
+<div class="container"
+     fxLayout
+     fxLayout.xs="column"
+     fxLayoutAlign="center"
+     fxLayoutGap="10px"
+     fxLayoutGap.xs="0">
+  <div class="item item-1" fxFlex="10%">Item 1</div>
+  <div class="item item-2" fxFlex="80%">
+
+
+
+    <mat-card class="titre" align="center">Creer une Enterprise</mat-card>
+
+
+<mat-horizontal-stepper [linear]="isLinear" #stepper>
+  <mat-step [stepControl]="firstFormGroup">
+    <form [formGroup]="firstFormGroup">
+     <ng-template matStepLabel>Profile de l'administrateur</ng-template>
+
+
+     <app-administrateurname></app-administrateurname>
+
+
+
+  <!--
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>  -->
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Profile de lentreprise</ng-template>
+      <app-administrateurprofile></app-administrateurprofile>
+
+      <!-- <div>
+       <button mat-button matStepperPrevious>Back</button>
+        <button mat-button matStepperNext>Next</button>
+      </div>  -->
+    </form>
+  </mat-step>
+  <mat-step>
+      <ng-template matStepLabel>Profile Complete</ng-template>
+
+
+    <app-administrateurcomplet></app-administrateurcomplet>
+<!--<div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div> -->
+  </mat-step>
+</mat-horizontal-stepper>
+
+
+  </div>
+<div class="item item-3" fxFlex="10%"></div>
+</div>
+</div>
+
+
+
+

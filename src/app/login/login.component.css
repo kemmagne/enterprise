@@ -1,0 +1,62 @@
+mat-toolbar{
+  top: 0px;
+  position: fixed;
+  z-index: 100;
+  list-style-type: none;
+
+}
+
+.home a{
+  color: #ffffff;
+  list-style-type: none;
+  text-decoration:none;
+}
+
+
+.conteneur{
+  background-color: rgb(247, 247, 249);
+  height: 100%;
+
+}
+
+
+
+
+.example-card {
+  width: 93%;
+  top: 40%;
+}
+
+.mat-form-field{
+  width: 90%;
+  margin-left: 5%;
+}
+
+mat-card-title {
+  margin-left: 120px;
+  color: #3f51b5;
+  padding-bottom: 20%;
+
+}
+
+.titre{
+  font-size: 150%;
+  font-family: "Times New Roman", Times, serif;
+}
+
+mat-checkbox{
+  margin: 7%  0% 7% 7%;
+
+}
+
+.example-button-row  button{
+  margin-top:6%;
+  margin-left: 10%;
+  width: 80%;
+
+  font-size: 130%;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom:5%;
+  border-radius: 10px;
+}
+

@@ -1,0 +1,22 @@
+.conteneur{
+    background-color: rgb(247, 247, 249);
+    height: 110%;
+    
+  }
+
+.titre{
+    font-size: 30px;
+    margin: 0px 0px 15px 0px;
+    color: #3f51b5;
+    justify-content: centre ;
+    margin-left: 2.3%;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.item-2{
+    margin-top: 7%;
+    width: 96%;
+}
+
+
+  

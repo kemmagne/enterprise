@@ -1,0 +1,210 @@
+<!-- <app-nav></app-nav> -->
+
+<div class="conteneur">
+  <div class="container contenu"
+       fxLayout
+       fxLayout.xs="column"
+       fxLayoutAlign="center"
+       fxLayoutGap="10px"
+       fxLayoutGap.xs="0">
+    <div class="item item-1" fxFlex="10%"></div>
+    <div class="item item-2" fxFlex="80%" >
+
+
+        <mat-card class="titre" align="center">Liste Des Entreprises</mat-card>
+
+
+        <mat-horizontal-stepper [linear]="isLinear" #stepper>
+          <mat-step [stepControl]="firstFormGroup">
+
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Entreprise</ng-template>
+
+              <div class="container"
+              fxLayout
+              fxLayout.xs="column"
+              fxLayoutAlign="center"
+              fxLayoutGap="10px"
+              fxLayoutGap.xs="0">
+           <div class="item item-4" fxFlex="8%"></div>
+           <div class="item item-5" fxFlex="42%">
+
+            <p>
+              <mat-form-field appearance="outline">
+
+
+                  <input matInput placeholder="Nom de la branche" formControlName="firstCtrl" required>
+                  <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                  <mat-hint align="end">Hint</mat-hint>
+                </mat-form-field>
+
+              </p>
+           </div>
+           <div class="item item-6" fxFlex="42%">
+
+            <p>
+
+              <mat-form-field appearance="outline">
+                <mat-label>Ville</mat-label>
+                <mat-select>
+                  <mat-option value="option">Yaounde</mat-option>
+                  <mat-option value="option">Douala</mat-option>
+                  <mat-option value="option">Buea</mat-option>
+                  <mat-option value="option">bertuoa</mat-option>
+                  <mat-option value="option">Maroua</mat-option>
+                  <mat-option value="option">Garoua</mat-option>
+                  <mat-option value="option">Bafoussam</mat-option>
+                  <mat-option value="option">Bameda</mat-option>
+                  <mat-option value="option">Bafoussam</mat-option>
+                  <mat-option value="option">Ebolowa</mat-option>
+
+
+                </mat-select>
+              </mat-form-field>
+
+            </p>
+
+           </div>
+           <div class="item item-7" fxFlex="8%"></div>
+         </div>
+
+
+
+
+              <div class="example-button-row">
+                  <button  mat-raised-button  matStepperNext color="primary">Primary</button>
+             <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>Administrateur</ng-template>
+
+              <div class="container"
+                fxLayout
+                fxLayout.xs="column"
+                fxLayoutAlign="center"
+                fxLayoutGap="10px"
+                fxLayoutGap.xs="0">
+               <div class="item item-9" fxFlex="8%"></div>
+              <div class="item item-10" fxFlex="42%">
+
+                  <p>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Nom de l'administrateur</mat-label>
+                        <input matInput placeholder="Placeholder">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-hint>Hint</mat-hint>
+                      </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field appearance="outline">
+                          <mat-label>Mot de passe</mat-label>
+                          <input matInput placeholder="Placeholder" formControlName="secondCtrl" required>
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                          <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                      </p>
+
+                      <p>
+
+                        <mat-form-field appearance="outline">
+                          <mat-label>Genre</mat-label>
+                          <mat-select>
+                            <mat-option value="option">Homme</mat-option>
+                            <mat-option value="option">Femme</mat-option>
+
+                          </mat-select>
+                        </mat-form-field>
+
+                      </p>
+              </div>
+
+              <div class="item item-10" fxFlex="42%">
+                  <p>
+                      <mat-form-field appearance="outline">
+                        <mat-label>Phone number</mat-label>
+                        <input matInput placeholder="Placeholder">
+                        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                        <mat-hint>Hint</mat-hint>
+                      </mat-form-field>
+                    </p>
+
+                    <p>
+                        <mat-form-field appearance="outline">
+                          <mat-label>adress Email</mat-label>
+                          <input matInput placeholder="Placeholder">
+                          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                          <mat-hint>Hint</mat-hint>
+                        </mat-form-field>
+                      </p>
+
+
+              </div>
+              <div class="item item-11" fxFlex="8%">Item 3</div>
+               </div>
+           <div>
+                <button mat-button matStepperPrevious>Back</button>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step>
+            <ng-template matStepLabel>Complete</ng-template>
+
+            <!--  FINALE  -->
+
+
+                <div class="container"
+                fxLayout
+                fxLayout.xs="column"
+                fxLayoutAlign="center"
+                fxLayoutGap="10px"
+                fxLayoutGap.xs="0">
+             <div class="item item-6" fxFlex="2%"></div>
+             <div class="item item-7" fxFlex="43%" >
+
+              <div class="mat-body-4">Nom de la Branche: SCDP-yaounde</div><br/>
+              <div class="mat-body-4">Ville:  </div><br/>
+              <div class="mat-body-4">Nom de l'administrateur: andré</div><br/>
+              <div class="mat-body-4">Mot de passe: AZERTY</div><br/>
+
+
+
+
+             </div>
+             <div class="item item-8" fxFlex="10%" ></div>
+             <div class="item item-9" fxFlex="42%">
+
+                <div class="mat-body-4">Phone Number: 650123893</div><br/>
+                <div class="mat-body-4">Email: andre@gmail.com</div><br/>
+                <div class="mat-body-4">Phone Number: 694412743</div><br/>
+                <div class="mat-body-4">Genre: Homme</div><br/>
+
+
+              </div>
+             <div class="item item-10" fxFlex="3%"></div>
+           </div>
+
+
+
+
+
+
+           <!--FINALE-->
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button RouterLink="/geoadmin">Enregistrer</button>
+            </div>
+          </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+
+    <div class="item item-1" fxFlex="10%"></div>
+
+  </div>
+
+
+  </div>

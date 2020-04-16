@@ -1,0 +1,86 @@
+<mat-card>
+
+  <div class="container"
+  fxLayout
+  fxLayout.xs="column"
+  fxLayoutAlign="center"
+  fxLayoutGap="10px"
+  fxLayoutGap.xs="0">
+
+
+  <div class="item item-1" fxFlex="3%"></div>
+  <div class="item item-1" fxFlex="45%">
+
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Type de Territoire</mat-label>
+        <mat-select placeholder="Select">
+          <mat-option value="homme">Type 1</mat-option>
+          <mat-option value="femme">Type 2</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </p>
+
+
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Univers de Controlle</mat-label>
+          <mat-select placeholder="Select">
+            <mat-option value="homme">Univers 1</mat-option>
+            <mat-option value="femme">Univers 2</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </p>
+
+    <p>
+        <mat-form-field appearance="outline">
+            <mat-label>Categories de Cntrrolle</mat-label>
+          <mat-select placeholder="Select">
+            <mat-option value="homme">Categorie 1</mat-option>
+            <mat-option value="femme">Categorie 2</mat-option>
+          </mat-select>
+        </mat-form-field>
+    </p>
+
+    <div class="example-button-row">
+        <button mat-raised-button>Image</button>
+
+      </div>
+
+
+  </div>
+  <div class="item item-1" fxFlex="3%"></div>
+
+  <div class="item item-2" fxFlex="45%">
+
+    <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Nom du Territoire</mat-label>
+          <input type="text" name="name" id="cont" matInput placeholder="Placeholder">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+
+        </mat-form-field>
+      </p>
+
+
+      <p>
+          <mat-form-field appearance="outline">
+            <mat-label>Date de Function </mat-label>
+              <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+      </p>
+
+
+
+      <div class="button">
+        <button  mat-raised-button color="primary" matStepperNext>Next</button>
+      </div>
+
+  </div>
+  <div class="item item-3" fxFlex="4%"></div>
+
+  </div>
+
+  </mat-card>

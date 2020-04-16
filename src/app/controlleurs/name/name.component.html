@@ -1,0 +1,107 @@
+<mat-card>
+
+<div class="container"
+fxLayout
+fxLayout.xs="column"
+fxLayoutAlign="center"
+fxLayoutGap="10px"
+fxLayoutGap.xs="0">
+
+
+<div class="item item-1" fxFlex="3%"></div>
+<div class="item item-1" fxFlex="45%">
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Nom du controlleur</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+
+
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Genre </mat-label>
+        <mat-select placeholder="Select">
+          <mat-option value="homme">Homme</mat-option>
+          <mat-option value="femme">Femme</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>Ville </mat-label>
+        <mat-select placeholder="Select">
+          <mat-option value="homme">Douala</mat-option>
+          <mat-option value="femme">Buea</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+
+    <mat-form-field appearance="outline">
+      <mat-label>Matricule</mat-label>
+      <input matInput placeholder="Placeholder">
+      <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    </mat-form-field>
+
+
+
+
+  <div class="example-button-row">
+      <button mat-raised-button>Image</button>
+
+    </div>
+
+
+</div>
+<div class="item item-1" fxFlex="3%"></div>
+
+<div class="item item-2" fxFlex="45%">
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>CNI:</mat-label>
+        <input type="text" name="cni" id="cni" matInput placeholder="Placeholder">
+        <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+      </mat-form-field>
+
+
+
+        <mat-form-field appearance="outline">
+          <input type="text" name="date" id="date" matInput [matDatepicker]="picker" placeholder="Choose a date">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Telephone</mat-label>
+          <input type="text" name="telephone" id="telephone" matInput placeholder="Placeholder">
+          <mat-icon matSuffix>phone</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>Mot De Passe</mat-label>
+          <input type="password" name="password" id="password" matInput placeholder="Placeholder">
+          <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+        </mat-form-field>
+
+
+    <div class="example-button-row">
+
+
+      <div class="buton">
+          <button  mat-raised-button color="primary" matStepperNext>Next</button>
+        </div>
+     <!--   <a matStepperNext color="primary"  routerLink=".">Next</a>  -->
+      </div>
+
+</div>
+<div class="item item-3" fxFlex="4%"></div>
+
+</div>
+
+</mat-card>
